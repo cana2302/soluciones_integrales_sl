@@ -45,6 +45,12 @@
             return $resultado['privilegio'];
         }
 
+        //Funcion para actualizar contraseña de usuario
+        public function actualizar_contrasena_usuario($usuario, $nueva_contra){
+            $stmt = $this->conexion_db->prepare("UPDATE ". TABLA_USUARIOS . " SET CONTRA=:nueva WHERE USUARIOS=:usuario");
+            $stmt->execute(array(":usuario"=>$_SESSION['sesion_'], ":nueva"=>$nueva_contra));
+        }
+
         //Funcion para insertar nuevo registro de usuario en la base de datos
         public function insertar_nuevo_usuario($nombre, $contra, $privilegio){
             $stmt = $this->conexion_db->prepare("INSERT INTO " . TABLA_USUARIOS . " (USUARIOS, CONTRA, privilegio) VALUES (:nombre, :contra, :permiso)");

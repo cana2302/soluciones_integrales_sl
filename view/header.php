@@ -41,13 +41,7 @@
                 <a class="opciones_menu_nav" href='../view/listado_clientes.php'></a>
                 <a class="opciones_menu_nav" href='../view/listado_asegurados.php'></a>
                 <a class="opciones_menu_nav" href='../view/listado_averias.php'></a>
-                <!-- Bloque php que comprueba si el usuario cuenta con permiso de administrador -->
-                <?php
-                    if ($_SESSION['privilegio']=='administrador'){
-                        /*True, entoces llama al docuemnto, para crear nueva opción: 'administración de usuarios' */
-                        require("../view/privilegio_adm.php");
-                    }    
-                ?>                 
+                <a class="opciones_menu_nav" href='../view/usuarios.php'>USUARIOS</a>                  
             </nav>
         </header>   
 
