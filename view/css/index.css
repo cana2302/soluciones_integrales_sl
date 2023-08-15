@@ -1,0 +1,38 @@
+
+body{
+    background-color: black;
+    color: white;
+}
+
+#img_portada{
+    width: 100%;
+}
+
+h3{
+    text-align: center;
+}
+
+table{
+    width: 30%;
+    background-color: black;
+    border: 1px solid /*dotted*/ white;
+    margin: auto;
+    color: white;
+}
+
+.label_izquierda{
+    text-align: right;
+}
+
+.input_derecha{
+    text-align: left;
+}
+
+td{
+    text-align: center;
+    padding: 10px;
+}
+
+div{
+    text-align: center;
+}

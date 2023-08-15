@@ -1,0 +1,29 @@
+
+form{
+    text-align: center;
+}
+
+table{
+    width: 40%;
+    margin: auto;
+    background-color: black;
+    border: 1px solid white;
+    padding: 5px;
+    color: white;
+}
+
+td{
+    text-align: center;
+}
+
+.izq{
+    text-align: right;
+}
+
+.der{
+    text-align: left;
+}
+
+h2{
+    text-align: center;
+}
