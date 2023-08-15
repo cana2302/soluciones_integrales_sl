@@ -61,5 +61,13 @@
                 ?>
             </table>
         </main>
+
+        <?php
+            if ($_SESSION['privilegio']=='administrador'){
+                /*True, entoces llama al documento, para crear nueva opción: 'eliminar_aseguradora' */
+                require("../view/listado_clientes_adm.php");
+            }    
+        ?> 
+
     </body>
 </html>

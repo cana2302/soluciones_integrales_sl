@@ -8,17 +8,17 @@
     // -----------------ELIMINAR REGISTRO EN BASE DE DATOS-----------------------
     if (isset($_POST['eliminar_seleccion']) && isset($_POST['cbox'])) {
         
-        $usuario_a_eliminar = $_POST['eliminar_seleccion'];
-        $nombre_columna = 'USUARIOS';
+        $asegurado_a_eliminar = $_POST['eliminar_seleccion'];
+        $nombre_columna = 'nombre';
 
         try {
             $objeto_TablasBBDD_model = new TablasBBDD_model;
-            $objeto_TablasBBDD_model->eliminar_registro($usuario_a_eliminar, $nombre_columna, TABLA_USUARIOS);
-            $mensaje_consulta = "<br>Usuario eliminado de forma exitosa!";
+            $objeto_TablasBBDD_model->eliminar_registro($asegurado_a_eliminar, $nombre_columna, TABLA_ASEGURADOS);
+            $mensaje_consulta = "<br>Asegurado eliminado de forma exitosa!";
             $_SESSION['mensaje_consulta'] = $mensaje_consulta;     
     
         } catch (Exception $e) {   // El cath se ejecuta solo si el try no se ha podido ejecutar
-            $mensaje_consulta = "<br>Error al intentar eliminar el usuario<br> Error: " . $e->getMessage();
+            $mensaje_consulta = "<br>Error al intentar eliminar el registro<br> Error: " . $e->getMessage();
             $_SESSION['mensaje_consulta'] = $mensaje_consulta;
     
         } finally {

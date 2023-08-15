@@ -60,5 +60,13 @@
                 ?>
             </table>
         </main>
+
+        <?php
+            if ($_SESSION['privilegio']=='administrador'){
+                /*True, entoces llama al documento, para crear nueva opción: 'eliminar_averias' */
+                require("../view/listado_averias_adm.php");
+            }    
+        ?> 
+
     </body>
 </html>

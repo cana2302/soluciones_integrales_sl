@@ -15,3 +15,12 @@ table{
 td,th{
     text-align: center;
 }
+
+.tabla1{
+    width: 30%;
+    margin: auto;
+    background-color: black;
+    border: 1px solid white;
+    padding: 5px;
+    color: white;
+}

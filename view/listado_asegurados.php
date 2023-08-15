@@ -57,7 +57,7 @@
 
         <?php
             if ($_SESSION['privilegio']=='administrador'){
-                /*True, entoces llama al docuemnto, para crear nueva opción: 'eliminar_asegurados' */
+                /*True, entoces llama al documento, para crear nueva opción: 'eliminar_asegurados' */
                 require("../view/listado_asegurados_adm.php");
             }    
         ?>  

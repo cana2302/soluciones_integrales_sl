@@ -51,11 +51,11 @@
             $stmt->execute(array(":nombre"=>$nombre,":contra"=>$contra,":permiso"=>$privilegio));
         }
 
-        //Función para eliminar usuario de la base de datos
-        public function eliminar_usuario($nombre_usuario){
-            $stmt = $this->conexion_db->prepare("DELETE FROM " . TABLA_USUARIOS. " WHERE USUARIOS=:usuario");
-            $stmt->execute(array(":usuario"=>$nombre_usuario));                        
-        }
+        //Función para eliminar un registro de una tabla de la base de datos
+        public function eliminar_registro($elemento, $nombre_columna, $tabla){
+            $stmt = $this->conexion_db->prepare("DELETE FROM " . $tabla. " WHERE $nombre_columna=:registro");
+            $stmt->execute(array(":registro"=>$elemento));                        
+        }        
 
         //Función para insertar nuevo asegurado en la base de datos
         public function insertar_nuevo_asegurado($nombre, $direccion, $telefono, $domicilio){
