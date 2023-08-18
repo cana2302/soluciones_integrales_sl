@@ -26,7 +26,7 @@
         <main>
             <br>    
             <h2>Listado de Asegurados Particulares<br></h2>
-            <table>
+            <table class="tabla_70">
                 <thead>
                     <tr>
                         <th>Nombre</th>

@@ -18,15 +18,14 @@
 				
 				// utilizamos un selector desendiente, con una función anónima:
 				$("#menu a").click (function(){ //al hacer click sobre estos elementos:
-
 					// creamos una variable que almacena el atributo href (del elemento this)
 					var url = $(this).attr("href");
-
 					//seleccionamos el div y cargamos un div especifico de otra pagina html
 					$("#contenido").load(url + " main");
-					//utilizamor retun false para anular el vinculo del elemento a (href)
+					//utilizamor retun false para anular el vinculo default del elemento a (href)
 					return false;
 				}); 
+                // Función que remueve y add clase css al hacer click al elemento
                 $("ul#menu li a").click(function() {
                     $("ul#menu li a").removeClass("active");
                     $(this).addClass("active");
@@ -73,7 +72,7 @@
             </nav>
         </header>
 
-        <!-- Contenido load según click en opción menú -->
+        <!-- En el elemento 'main' colocaremos información sin recargar la pag. (ajax) -->
         <main id="contenido">
 
         </main>   

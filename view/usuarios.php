@@ -29,7 +29,7 @@
                 <br>
                 <h2>Formulario para modificar contraseña de USUARIO</h2>
                 <form action="../controller/usuarios1.php" method="post">             
-                    <table class="tabla1">
+                    <table class="tabla_30">
                         <tr>
                             <td colspan="2"><label>&nbsp</label></td>
                         </tr>

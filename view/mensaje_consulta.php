@@ -20,15 +20,17 @@
             ?>
         </header> 
 
-        <?php
+        <main>
+            <?php
 
-            if (isset($_SESSION["mensaje_consulta"])) {
-                echo "<br><br>";
-                echo '<h2>' . $_SESSION["mensaje_consulta"] . '</h2>';
-                unset($_SESSION["mensaje_consulta"]); // Limpia la variable de sesión para que el mensaje solo se muestre una vez.
-            }
+                if (isset($_SESSION["mensaje_consulta"])) {
+                    echo "<br><br>";
+                    echo '<h2>' . $_SESSION["mensaje_consulta"] . '</h2>';
+                    unset($_SESSION["mensaje_consulta"]); // Limpia la variable de sesión para que el mensaje solo se muestre una vez.
+                }
 
-        ?>
+            ?>
+        </main>
     </body>
     
 </html>

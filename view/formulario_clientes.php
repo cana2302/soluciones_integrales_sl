@@ -24,7 +24,7 @@
             <br>
             <h2>Formulario para ingresar nuevos CLIENTES</h2>
             <form action="../controller/formulario_cliente1.php" method="post">                
-                <table>
+                <table class="tabla_40">
                     <tr>
                         <td colspan="2"><label>&nbsp</label></td>
                     </tr>

@@ -3,7 +3,7 @@
 <div>
     <h2>Eliminar Aseguradora</h2>
     <form action="../controller/eliminar_aseguradora.php" method="post">
-        <table class="tabla1">
+        <table class="tabla_30">
             <tr>
                 <td colspan="2"><label>&nbsp</label></td>
             </tr>

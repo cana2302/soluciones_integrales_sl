@@ -5,7 +5,7 @@
 <div>
     <br>
     <h2>Listado de USUARIOS activos<br></h2>
-    <table>
+    <table class="tabla_50">
         <thead>
             <tr>
                 <th>ID</th>
@@ -39,7 +39,7 @@
     <br>
     <h2>Formulario para registrar nuevos USUARIOS</h2>
     <form action="../controller/administrar_usuarios1.php" method="post">             
-        <table class="tabla1">
+        <table class="tabla_30">
             <tr>
                 <td colspan="2"><label>&nbsp</label></td>
             </tr>
@@ -76,7 +76,7 @@
 <div>
     <h2>Eliminar USUARIO</h2>
     <form action="../controller/administrar_usuarios2.php" method="post">
-        <table class="tabla1">
+        <table class="tabla_30">
             <tr>
                 <td colspan="2"><label>&nbsp</label></td>
             </tr>

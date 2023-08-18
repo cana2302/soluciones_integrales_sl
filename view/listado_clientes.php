@@ -27,7 +27,7 @@
         <main>
             <br>
             <h2>Listado de CLIENTES<br></h2>
-            <table>
+            <table class="tabla_70">
                 <thead>
                     <tr>
                         <th>Nombre</th>

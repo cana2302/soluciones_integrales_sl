@@ -27,7 +27,7 @@
         <main>
             <br>    
             <h2>Listado de Reparaciones<br></h2>
-            <table>
+            <table class="tabla_80">
                 <thead>
                     <tr>
                         <th>ID reparación</th>

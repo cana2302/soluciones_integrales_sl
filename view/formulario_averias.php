@@ -27,7 +27,7 @@
             <br>
             <h2>Formulario para ingresar nueva AVERÍA</h2>
             <form action="../controller/formulario_averias1.php" method="post">                
-                <table>
+                <table class="tabla_60">
                     <tr>
                         <td colspan="2"><label>&nbsp</label></td>
                     </tr>
