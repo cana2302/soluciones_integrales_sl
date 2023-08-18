@@ -42,7 +42,10 @@
                             <td class="der"><input type="text" name="usuario2" id="contraseña" required maxlength="25"/></td>
                         </tr>
                         <tr>
-                            <td class="centro">
+                            <td>&nbsp&nbsp&nbsp&nbsp</td>
+                        </tr>                        
+                        <tr>
+                            <td colspan="2">
                                 <input type="checkbox" name="cbox" value="confirmacion" required/>
                                 <label for="cbox">Estoy de acuerdo</label>
                             </td>

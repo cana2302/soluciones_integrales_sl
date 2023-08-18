@@ -1,4 +1,5 @@
-<html>
+<!DOCTYPE html>
+<html lang="en">
 
 <!-- Tabla con usuarios activos -->
 <div>
@@ -69,7 +70,8 @@
         </table>
     </form>
     <br>
-</di
+</div>
+
 <!-- Formulario para seleccionar y eliminar usuario -->
 <div>
     <h2>Eliminar USUARIO</h2>

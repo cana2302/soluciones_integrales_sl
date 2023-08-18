@@ -9,7 +9,7 @@
             </tr>
             <tr>
                 <td>
-                    <label for="opciones">Seleccionar ID de Avería:</label>
+                    <label for="opciones">Seleccionar ID de reparación:</label>
                     <select name="eliminar_seleccion">
                     <?php
                         foreach($array_averias as $elemento){

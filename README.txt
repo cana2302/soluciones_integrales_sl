@@ -23,3 +23,4 @@ usuario:     usuario1
 contraseña:  contra123
 -------------------------------------------------------
 
+El archivo ./model/config.php contiene las constantes para la conexion a la base de datos.
