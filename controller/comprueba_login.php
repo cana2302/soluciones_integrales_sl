@@ -24,7 +24,7 @@
             $_SESSION['privilegio'] = ($objeto_TablasBBDD_model->get_privilegio_usuario($_SESSION['sesion_']));
             
             //Redirigir a página de inicio, menú principal:
-            echo"<script language='javascript'>window.location='../view/inicio.php'</script>;";
+            echo"<script language='javascript'>window.location='../view/principal.php'</script>;";
                     
         } else {
             //Redirigir a la propia página en caso de usuario incorrecto (index/login)

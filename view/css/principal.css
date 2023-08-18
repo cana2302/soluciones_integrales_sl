@@ -73,21 +73,50 @@ body{
 nav{
     display: flex;
     justify-content: space-around;
-    height: 70px; /*altura del nav*/
     align-items: center; /*alienear centrado en eje vertical los elementos del nav*/
     border-bottom: white solid 1px; /*borde inferior*/
+    background-color: black;
+    color: white;
+    height: 70px; /*altura del nav*/
 }
 
+ul#menu{
+    list-style: none;
+    display: flex;
+    justify-content: space-between;
+    padding: 0;
+    margin: 0;
+    width: 100%; /* Ocupa todo el ancho disponible */
 
-.opciones_menu_nav{
-    color: white; /*color de letra*/
-    text-decoration-line: none; /*enlace sin subrayado*/
 }
 
+ul#menu li{
+    padding: 10px 20px;
+}
 
-.opciones_menu_nav:hover{
-    color: white; /*color de letra*/
+ul#menu li a {
+    color: #fff;
+    text-decoration: none;
+}
+
+ul#menu li a.active {
+    color:rgb(235, 90, 71);
+}
+
+ul#menu li:hover{
     text-decoration-line: none; /*enlace sin subrayado*/
     background-color: #717476;
+    color: white;
 }
+
+
 /*------------------------------------------------*/
+
+table{
+    width: 40%;
+    margin: auto;
+    background-color: black;
+    border: 1px solid white;
+    padding: 5px;
+    color: white;
+}

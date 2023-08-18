@@ -1,14 +1,38 @@
+<?php
+    require ('../controller/sesion.php');
+?>
+
 <!DOCTYPE html>
 <html lang="en">
     <head>
         <meta charset="utf8mb4_unicode_ci">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>Header</title>
+        <title>Soluciones Integrales</title>
         <!-- Enlace hoja de estilos -->
-        <link rel="stylesheet" type="text/css" href="../view/css/header1.css">
+        <link rel="stylesheet" type="text/css" href="../view/css/principal.css">
         <!--Libreria Jquery-->
         <script src="../view/assets/Jquery/jquery-3.7.0.min.js"></script>
+        <script>
+			$(document).ready(function() {
+				
+				// utilizamos un selector desendiente, con una función anónima:
+				$("#menu a").click (function(){ //al hacer click sobre estos elementos:
+
+					// creamos una variable que almacena el atributo href (del elemento this)
+					var url = $(this).attr("href");
+
+					//seleccionamos el div y cargamos un div especifico de otra pagina html
+					$("#contenido").load(url + " main");
+					//utilizamor retun false para anular el vinculo del elemento a (href)
+					return false;
+				}); 
+                $("ul#menu li a").click(function() {
+                    $("ul#menu li a").removeClass("active");
+                    $(this).addClass("active");
+                });		
+			}); 
+		</script>
     </head>
 
     <body>
@@ -47,7 +71,12 @@
                     <li><a class="opciones_menu_nav" href='../view/usuarios.php'>USUARIOS</a> </li>
                 </ul>                
             </nav>
-        </header>   
+        </header>
+
+        <!-- Contenido load según click en opción menú -->
+        <main id="contenido">
+
+        </main>   
 
     </body>
 </html>
