@@ -165,3 +165,17 @@ form{
     text-align: center;
 }
 
+/* ---------inicio -------*/
+.foto{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    margin-bottom: 5px;
+}
+
+.img{
+    text-align: center;
+    clip-path: inset(10% 10% 10% 10%);
+    border: 4px solid yellow;
+}
+

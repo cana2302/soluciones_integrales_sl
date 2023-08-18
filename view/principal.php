@@ -15,21 +15,48 @@
         <script src="../view/assets/Jquery/jquery-3.7.0.min.js"></script>
         <script>
 			$(document).ready(function() {
-				
-				// utilizamos un selector desendiente, con una función anónima:
-				$("#menu a").click (function(){ //al hacer click sobre estos elementos:
-					// creamos una variable que almacena el atributo href (del elemento this)
-					var url = $(this).attr("href");
-					//seleccionamos el div y cargamos un div especifico de otra pagina html
-					$("#contenido").load(url + " main");
-					//utilizamor retun false para anular el vinculo default del elemento a (href)
-					return false;
-				}); 
-                // Función que remueve y add clase css al hacer click al elemento
-                $("ul#menu li a").click(function() {
+
+                cargarContenidoInicial();
+
+                function cargarContenidoInicial() {
+                    var url = '../view/inicio.php';
+                    cargarContenido(url);
+                    $("ul#menu li a").removeClass("active");
+                    $("ul#menu li a#inicio").addClass("active");
+                }
+
+                function cargarContenido(url) {
+                    $("#contenido").load(url + " main", function(){
+                        $("#contenido .img").hide().fadeIn(5000);
+                    });     
+                }
+
+            	// utilizamos un selector desendiente, con una función anónima:
+                $("#menu a").click(function() {
+                    // creamos una variable que almacena el atributo href (del elemento this)                    
+                    var url = $(this).attr("href");
+                    cargarContenido(url);
                     $("ul#menu li a").removeClass("active");
                     $(this).addClass("active");
-                });		
+                    //utilizamor retun false para anular el vinculo default del elemento a (href)
+                    return false;
+                });
+
+                $("#contenido").on("click", "img", function() {
+                    var nuevaPagina = $(this).parent("a").attr("href");
+
+                    $("ul#menu li a").removeClass("active");
+
+                    // Comparación y modificación de estilo
+                    $("ul#menu li a").each(function() {
+                        if ($(this).attr("href") === nuevaPagina) { 
+                            $(this).addClass("active");
+                        } 
+                    });
+                    cargarContenido(nuevaPagina);
+                    return false;
+                });
+                
 			}); 
 		</script>
     </head>
@@ -60,14 +87,14 @@
             <!-- Menú de navegación: INICIO - NUEVO CLIENTE - NUEVO ASEGURADO - etc.. -->
             <nav>
                 <ul id="menu">
-                    <li><a class="opciones_menu_nav" href='../view/inicio.php'>INICIO</a></li>
-                    <li><a class="opciones_menu_nav" href='../view/formulario_clientes.php'>NUEVO CLIENTE</a></li>
-                    <li><a class="opciones_menu_nav" href='../view/formulario_asegurados.php'>NUEVO ASEGURADO</a></li>
-                    <li><a class="opciones_menu_nav" href='../view/formulario_averias.php'>NUEVA AVERÍA</a></li>
-                    <li><a class="opciones_menu_nav" href='../view/listado_clientes.php'>LISTADO CLIENTES</a></li>
-                    <li><a class="opciones_menu_nav" href='../view/listado_asegurados.php'>LISTADO ASEGURADOS</a></li>
-                    <li><a class="opciones_menu_nav" href='../view/listado_averias.php'>LISTADO AVERIAS</a></li>
-                    <li><a class="opciones_menu_nav" href='../view/usuarios.php'>USUARIOS</a> </li>
+                    <li><a id="inicio" href='../view/inicio.php'>INICIO</a></li>
+                    <li><a href='../view/formulario_clientes.php'>NUEVO CLIENTE</a></li>
+                    <li><a href='../view/formulario_asegurados.php'>NUEVO ASEGURADO</a></li>
+                    <li><a href='../view/formulario_averias.php'>NUEVA AVERÍA</a></li>
+                    <li><a href='../view/listado_clientes.php'>LISTADO CLIENTES</a></li>
+                    <li><a href='../view/listado_asegurados.php'>LISTADO ASEGURADOS</a></li>
+                    <li><a href='../view/listado_averias.php'>LISTADO AVERIAS</a></li>
+                    <li><a href='../view/usuarios.php'>USUARIOS</a> </li>
                 </ul>                
             </nav>
         </header>

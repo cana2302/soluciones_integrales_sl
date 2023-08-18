@@ -23,26 +23,31 @@
             ?>
         </header>
         <main>
+            <script>
+                $(document).ready(function(){
+                    $(".img").hide().fadeIn(5000); //retardo aparición de imgenes en body                
+                });
+            </script>
             <div class="foto" id="arriba">
                 <div class="img">
-                    <a href='formulario_clientes.php'><img src="../view/assets/img/form_cliente.png" alt="formulario clientes" width="75%" height="75%" id="img1"></a>
+                    <a href='../view/formulario_clientes.php'><img src="../view/assets/img/form_cliente.png" alt="formulario clientes" width="75%" height="75%" id="img1"></a>
                 </div>                        
                 <div class="img">
-                    <a href="formulario_asegurados.php"><img src="../view/assets/img/form_asegurado.png" alt="formulario asegurados" width="75%" height="75%"></a> 
+                    <a href="../view/formulario_asegurados.php"><img src="../view/assets/img/form_asegurado.png" alt="formulario asegurados" width="75%" height="75%"></a> 
                 </div>               
                 <div class="img">
-                    <a href="formulario_averias.php"><img src="../view/assets/img/form_averia.png" alt="formulario reparaciones" width="75%" height="75%"></a>
+                    <a href="../view/formulario_averias.php"><img src="../view/assets/img/form_averia.png" alt="formulario reparaciones" width="75%" height="75%"></a>
                 </div>
             </div>
             <div class="foto">
                 <div class="img">
-                    <a href="listado_clientes.php"><img src="../view/assets/img/list_aseguradoras.png" alt="lista clientes" width="75%" height="75%"></a> 
+                    <a href="../view/listado_clientes.php"><img src="../view/assets/img/list_aseguradoras.png" alt="lista clientes" width="75%" height="75%"></a> 
                 </div>                        
                 <div class="img">
-                    <a href="listado_asegurados.php"><img src="../view/assets/img/list_asegurados.png" alt="lista asegurados" width="75%" height="75%"></a>
+                    <a href="../view/listado_asegurados.php"><img src="../view/assets/img/list_asegurados.png" alt="lista asegurados" width="75%" height="75%"></a>
                 </div>
                 <div class="img">
-                    <a href="listado_averias.php"><img src="../view/assets/img/list_averias.png" alt="lista averias" width="75%" height="75%"></a>
+                    <a href="../view/listado_averias.php"><img src="../view/assets/img/list_averias.png" alt="lista averias" width="75%" height="75%"></a>
                 </div>
             </div>
         </main> 
