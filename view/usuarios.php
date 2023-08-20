@@ -13,15 +13,8 @@
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>Administrar Usuarios</title>
-        <!--Hoja de estilos-->
-        <link rel="stylesheet" type="text/css" href="../view/css/administrar_usuarios.css">
     </head>
     <body>
-        <header>
-            <?php
-                require("../view/header1.php");
-            ?>
-        </header>
         <main>
                     
             <!-- Formulario para modificar contraseña de usuario -->

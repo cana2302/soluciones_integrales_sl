@@ -9,19 +9,9 @@
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>Inicio</title>
-        <!--Hoja de estilos-->
-        <link rel="stylesheet" type="text/css" href="../view/css/inicio.css">
-        <!--Libreria Jquery-->
-        <script src="../view/assets/Jquery/jquery-3.7.0.min.js"></script>
-        <script src="../view/js/script_imagenes.js"></script>
     </head>
 
     <body>
-        <header>
-            <?php
-                require ("../view/header.php");
-            ?>
-        </header>
         <main>
             <script>
                 $(document).ready(function(){
@@ -51,12 +41,6 @@
                 </div>
             </div>
         </main> 
-
-        <footer>
-            <h4 style="text-align: center;">
-                <script src="../view/js/script_fecha.js"></script>    
-            </h4>
-        </footer>
 
     </body>
 </html>

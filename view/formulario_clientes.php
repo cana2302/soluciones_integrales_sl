@@ -8,18 +8,10 @@
         <meta charset="utf8mb4_unicode_ci">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>Formulario Cliente</title>
-        <!--Hoja de estilos-->
-        <link rel="stylesheet" type="text/css" href="../view/css/formulario_clientes.css">        
+        <title>Formulario Cliente</title>   
     </head>
 
-    <body>
-        <header>
-            <?php
-                require("../view/header1.php");
-            ?>
-        </header>
- 
+    <body> 
         <main>
             <br>
             <h2>Formulario para ingresar nuevos CLIENTES</h2>

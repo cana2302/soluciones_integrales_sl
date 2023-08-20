@@ -9,17 +9,9 @@
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>Nuevo Asegurado</title>
-        <!--Hoja de estilos-->
-        <link rel="stylesheet" type="text/css" href="../view/css/formulario_asegurados.css">
     </head>
 
     <body>
-        <header>
-            <?php
-                require("../view/header1.php");
-            ?>
-        </header>
-
         <main>
             <br>
             <h2>Formulario para ingresar nuevos ASEGURADOS</h2>

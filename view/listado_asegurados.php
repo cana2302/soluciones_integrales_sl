@@ -18,11 +18,6 @@
     </head>
 
     <body>
-        <header>
-            <?php
-                require("../view/header1.php");
-            ?>
-        </header>
         <main>
             <br>    
             <h2>Listado de Asegurados Particulares<br></h2>

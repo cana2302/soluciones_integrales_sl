@@ -33,7 +33,7 @@
 
             	// utilizamos un selector desendiente, con una función anónima:
                 $("#menu a").click(function() {
-                    // creamos una variable que almacena el atributo href (del elemento this)                    
+                    // creamos una variable que almacena el atributo href del elemento (this)                    
                     var url = $(this).attr("href");
                     cargarContenido(url);
                     $("ul#menu li a").removeClass("active");
