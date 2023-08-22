@@ -18,6 +18,11 @@ table{
     border: 1px solid /*dotted*/ white;
     margin: auto;
     color: white;
+    transition: .4s;
+}
+
+table:hover{
+    box-shadow: 0 0 20px white;
 }
 
 .label_izquierda{
@@ -36,3 +41,5 @@ td{
 div{
     text-align: center;
 }
+
+

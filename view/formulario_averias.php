@@ -26,24 +26,26 @@
                     </tr>
                     <tr>
                         <td class="izq"><label for="nombre">Nombre Aseguradora</label></td>
-                        <td class="der"><input autofocus list="listado_clientes" name="averia1" required maxlength="99"/>
-                            <datalist id="listado_clientes">
+                        <td class="der">
+                            <select name="averia1" id="listado_clientes">
                                 <?php
-                                    foreach($array_nombres_aseguradoras as $elemento){
-                                        echo "<option value='" . $elemento['nombre'] . "'></option>";
-                                    }        
-                                ?>  
+                                    foreach($array_aseguradoras as $elemento){
+                                        echo "<option value='" . $elemento['nombre'] . "'>" . $elemento['nombre'] . "</option>";
+                                    }
+                                ?>   
+                            </select>
                         </td>
                     </tr>
                     <tr>
                         <td class="izq"><label for="aseguradora">Asegurado Particular</label></td>
-                        <td class="der"><input list="listado_asegurados" name="averia2" required maxlength="99"/>
-                            <datalist id="listado_asegurados">
+                        <td class="der">
+                            <select id="listado_asegurados" name="averia2">
                                 <?php
-                                    foreach($array_nombres_asegurados as $elemento){
-                                        echo "<option value='" . $elemento['nombre'] . "'></option>";
-                                    }        
-                                ?>  
+                                    foreach($array_asegurados as $elemento){
+                                        echo "<option value='" . $elemento['nombre'] . "'>" . $elemento['nombre'] . "</option>";
+                                    }
+                                ?>   
+                            </select>
                         </td>
                     </tr>
                     <tr>

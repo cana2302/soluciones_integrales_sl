@@ -17,6 +17,7 @@
 
     <body>        
         <main>
+
             <br>
             <h2>Listado de CLIENTES<br></h2>
             <table class="tabla_70">
@@ -52,6 +53,75 @@
                     }        
                 ?>
             </table>
+
+
+            <!-- Formulario para modificar datos aseguradoras -->
+            <div>
+                <br>
+                <h2>Formulario para actualizar datos de Cliente</h2>
+                <form action="../controller/update_aseguradora.php" method="post">             
+                    <table class="tabla_30">
+                        <tr>
+                            <td colspan="2"><label>&nbsp</label></td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <label for="opciones">Seleccionar Aseguradora:</label>
+                                <select name="aseguradora_seleccionada">
+                                <?php
+                                    foreach($array_aseguradoras as $elemento){
+                                        echo "<option value='" . $elemento['nombre'] . "'>" . $elemento['nombre'] . "</option>";
+                                    }
+                                ?>   
+                                </select>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td class="izq"><label for="contraseña">Nuevo nombre:</label></td>
+                            <td class="der"><input type="text" name="nuevo_nombre" required maxlength="25"/></td>
+                        </tr>
+                        <tr>
+                            <td class="izq"><label for="contraseña">Nuevo domicilo:</label></td>
+                            <td class="der"><input type="text" name="nuevo_domicilio" required maxlength="25"/></td>
+                        </tr>
+                        <tr>
+                            <td class="izq"><label for="contraseña">Nuevo CIF:</label></td>
+                            <td class="der"><input type="text" name="nuevo_cif" required maxlength="25"/></td>
+                        </tr>   
+                        <tr>
+                            <td class="izq"><label for="contraseña">Nuevo Telefono:</label></td>
+                            <td class="der"><input type="text" name="nuevo_tel" required maxlength="25"/></td>
+                        </tr>    
+                        <tr>
+                            <td class="izq"><label for="contraseña">Nuevo Mail:</label></td>
+                            <td class="der"><input type="text" name="nuevo_mail" required maxlength="25"/></td>
+                        </tr>           
+                        <tr>
+                            <td class="izq"><label for="contraseña">Nueva persona de contacto:</label></td>
+                            <td class="der"><input type="text" name="nueva_persona" required maxlength="25"/></td>
+                        </tr>               
+                        <tr>
+                            <td>&nbsp&nbsp&nbsp&nbsp</td>
+                        </tr>                        
+                        <tr>
+                            <td colspan="2">
+                                <input type="checkbox" name="cbox" value="confirmacion" required/>
+                                <label for="cbox">Estoy de acuerdo</label>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>&nbsp&nbsp&nbsp&nbsp</td>
+                        </tr>
+                        <tr>
+                            <td colspan="2"><input type="submit" name="enviando" value="   Actualizar   "></td>
+                        </tr>
+                        <tr>
+                            <td>&nbsp&nbsp&nbsp&nbsp</td>
+                        </tr>
+                    </table>
+                </form>
+                <br>
+            </div>            
 
             <?php
                 if ($_SESSION['privilegio']=='administrador'){

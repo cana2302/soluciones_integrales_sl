@@ -13,10 +13,9 @@
             <div>
                 <br>
                 <h2>Listado de USUARIOS activos<br></h2>
-                <table class="tabla_50">
+                <table class="tabla_40">
                     <thead>
                         <tr>
-                            <th>ID</th>
                             <th>Usuario</th>
                             <th>Password</th>
                             <th>Permisos</th>
@@ -26,9 +25,6 @@
                         foreach($array_usuarios as $elemento){
                             echo "<tbody>
                                 <tr>
-                                    <td>";
-                                        echo $elemento['ID'] . "
-                                    </td>
                                     <td>";
                                         echo $elemento['USUARIOS'] . "</td>
                                     <td>";

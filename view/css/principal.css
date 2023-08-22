@@ -149,7 +149,7 @@ table{
     width: 80%;
 }
 
-td,th{
+td,th,tr{
     text-align: center;
 }
 
@@ -177,4 +177,5 @@ form{
     text-align: center;
     clip-path: inset(10% 10% 10% 10%);
 }
+
 

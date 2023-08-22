@@ -16,7 +16,7 @@
 
         <main>            
             <h3><br>Introduce tus datos</h3>
-            <div id="login">
+            <div>
                 <br>
                 <form action="./controller/comprueba_login.php" method="post">
                     <table>

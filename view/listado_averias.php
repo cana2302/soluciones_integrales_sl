@@ -28,6 +28,7 @@
                         <th>Fecha</th>
                         <th>Descripción</th>
                         <th>Ruta de imágen</th>
+                        <th>Usuario</th>
                     </tr>
                 </thead>
                 <?php
@@ -35,17 +36,19 @@
                         echo "<tbody>
                             <tr>
                                 <td>";
-                                    echo $elemento['id'] . "</td>
+                                    echo $elemento['id_averia'] . "</td>
                                 <td>";
-                                    echo $elemento['aseguradora'] . "</td>
+                                    echo $elemento['nombre_aseguradora'] . "</td>
                                 <td>";
-                                    echo $elemento['asegurado'] . "</td>
+                                    echo $elemento['nombre_asegurado'] . "</td>
                                 <td>";
                                     echo $elemento['fecha'] . "</td>
                                 <td>";
                                     echo $elemento['descripcion'] . "</td>
                                 <td>";
                                     echo $elemento['imagen'] . "</td>
+                                <td>";
+                                    echo $elemento['usuario'] . "</td>    
                             </tr>
                         </tbody>";
                     }        

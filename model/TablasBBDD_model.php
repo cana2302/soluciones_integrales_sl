@@ -51,6 +51,21 @@
             $stmt->execute(array(":usuario"=>$_SESSION['sesion_'], ":nueva"=>$nueva_contra));
         }
 
+        //Funcion para actualizar aseguradora
+        public function actualizar_aseguradora($aseguradora, $nuevo_nombre, $nuevo_domicilio, $nuevo_cif, $nuevo_tel, $nuevo_mail, $nueva_persona){
+            $stmt = $this->conexion_db->prepare("UPDATE ". TABLA_ASEGURADORAS . " SET nombre=:nuevo_nom, domicilio=:nuevo_domicilio, cif=:nuevo_cif, telefono=:nuevo_tel, mail=:nuevo_mail, persona=:nueva_persona WHERE nombre=:nombre");
+            $stmt->bindParam(':nombre',$aseguradora, PDO::PARAM_STR);
+            $stmt->bindParam(':nuevo_nom',$nuevo_nombre, PDO::PARAM_STR);
+            $stmt->bindParam(':nuevo_domicilio',$nuevo_domicilio, PDO::PARAM_STR);
+            $stmt->bindParam(':nuevo_cif',$nuevo_cif, PDO::PARAM_STR);
+            $stmt->bindParam(':nuevo_tel',$nuevo_tel, PDO::PARAM_STR);
+            $stmt->bindParam(':nuevo_mail',$nuevo_mail, PDO::PARAM_STR);
+            $stmt->bindParam(':nueva_persona',$nueva_persona, PDO::PARAM_STR);
+            $stmt->execute();
+        }
+
+
+
         //Funcion para insertar nuevo registro de usuario en la base de datos
         public function insertar_nuevo_usuario($nombre, $contra, $privilegio){
             $stmt = $this->conexion_db->prepare("INSERT INTO " . TABLA_USUARIOS . " (USUARIOS, CONTRA, privilegio) VALUES (:nombre, :contra, :permiso)");
@@ -87,12 +102,13 @@
 
         //Función para insertar nueva reparación en la base de datos
         public function insertar_nueva_averia($aseguradora, $asegurado, $fecha, $descripcion, $ruta_imagen){
-            $stmt = $this->conexion_db->prepare("INSERT INTO " . TABLA_AVERIAS . " (aseguradora, asegurado, fecha, descripcion, imagen) VALUES (:nombre_aseguradora, :nombre_asegurado, :fecha, :descripcion, :ruta)");
+            $stmt = $this->conexion_db->prepare("INSERT INTO " . TABLA_AVERIAS . " (nombre_aseguradora, nombre_asegurado, fecha, descripcion, imagen, usuario) VALUES (:nombre_aseguradora, :nombre_asegurado, :fecha, :descripcion, :ruta, :usuario)");
             $stmt->bindParam(':nombre_aseguradora', $aseguradora, PDO::PARAM_STR);
             $stmt->bindParam(':nombre_asegurado', $asegurado, PDO::PARAM_STR);
             $stmt->bindParam(':fecha', $fecha, PDO::PARAM_STR);
             $stmt->bindParam(':descripcion', $descripcion, PDO::PARAM_STR);
             $stmt->bindParam(':ruta', $ruta_imagen, PDO::PARAM_STR);
+            $stmt->bindParam(':usuario', $_SESSION["sesion_"], PDO::PARAM_STR);
             $stmt->execute();
         }
 
