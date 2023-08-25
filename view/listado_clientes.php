@@ -60,14 +60,14 @@
                 <br>
                 <h2>Formulario para actualizar datos de Cliente</h2>
                 <form action="../controller/update_aseguradora.php" method="post">             
-                    <table class="tabla_30">
+                    <table class="tabla_40">
                         <tr>
                             <td colspan="2"><label>&nbsp</label></td>
                         </tr>
                         <tr>
-                            <td>
-                                <label for="opciones">Seleccionar Aseguradora:</label>
-                                <select name="aseguradora_seleccionada">
+                            <td colspan="2">
+                                <label for="opciones" class="izq">Seleccionar Aseguradora:</label>
+                                <select name="aseguradora_seleccionada" class="der">
                                 <?php
                                     foreach($array_aseguradoras as $elemento){
                                         echo "<option value='" . $elemento['nombre'] . "'>" . $elemento['nombre'] . "</option>";
@@ -77,27 +77,30 @@
                             </td>
                         </tr>
                         <tr>
-                            <td class="izq"><label for="contraseña">Nuevo nombre:</label></td>
+                            <td colspan="2"><label>&nbsp</label></td>
+                        </tr>
+                        <tr>
+                            <td class="izq"><label>Nuevo nombre:</label></td>
                             <td class="der"><input type="text" name="nuevo_nombre" required maxlength="25"/></td>
                         </tr>
                         <tr>
-                            <td class="izq"><label for="contraseña">Nuevo domicilo:</label></td>
+                            <td class="izq"><label>Nuevo domicilo:</label></td>
                             <td class="der"><input type="text" name="nuevo_domicilio" required maxlength="25"/></td>
                         </tr>
                         <tr>
-                            <td class="izq"><label for="contraseña">Nuevo CIF:</label></td>
+                            <td class="izq"><label>Nuevo CIF:</label></td>
                             <td class="der"><input type="text" name="nuevo_cif" required maxlength="25"/></td>
                         </tr>   
                         <tr>
-                            <td class="izq"><label for="contraseña">Nuevo Telefono:</label></td>
+                            <td class="izq"><label>Nuevo Telefono:</label></td>
                             <td class="der"><input type="text" name="nuevo_tel" required maxlength="25"/></td>
                         </tr>    
                         <tr>
-                            <td class="izq"><label for="contraseña">Nuevo Mail:</label></td>
+                            <td class="izq"><label>Nuevo Mail:</label></td>
                             <td class="der"><input type="text" name="nuevo_mail" required maxlength="25"/></td>
                         </tr>           
                         <tr>
-                            <td class="izq"><label for="contraseña">Nueva persona de contacto:</label></td>
+                            <td class="izq"><label>Nueva persona de contacto:</label></td>
                             <td class="der"><input type="text" name="nueva_persona" required maxlength="25"/></td>
                         </tr>               
                         <tr>

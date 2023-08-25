@@ -64,7 +64,16 @@
             $stmt->execute();
         }
 
-
+        //Funcion para actualizar aseguradora
+        public function actualizar_asegurado($asegurado, $nuevo_nombre, $nueva_direccion, $nuevo_tel, $nuevo_dom_rep){
+            $stmt = $this->conexion_db->prepare("UPDATE ". TABLA_ASEGURADORAS . " SET nombre=:nuevo_nom, domicilio=:nuevo_domicilio, cif=:nuevo_cif, telefono=:nuevo_tel, mail=:nuevo_mail, persona=:nueva_persona WHERE nombre=:nombre");
+            $stmt->bindParam(':nombre',$asegurado, PDO::PARAM_STR);
+            $stmt->bindParam(':nuevo_nom',$nuevo_nombre, PDO::PARAM_STR);
+            $stmt->bindParam(':nuevo_domicilio',$nueva_direccion, PDO::PARAM_STR);
+            $stmt->bindParam(':nuevo_tel',$nuevo_tel, PDO::PARAM_STR);
+            $stmt->bindParam(':nuevo_mail',$nuevo_dom_rep, PDO::PARAM_STR);
+            $stmt->execute();
+        }
 
         //Funcion para insertar nuevo registro de usuario en la base de datos
         public function insertar_nuevo_usuario($nombre, $contra, $privilegio){

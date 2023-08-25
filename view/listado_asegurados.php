@@ -49,6 +49,69 @@
                 ?>
             </table>
 
+            <!-- Formulario para modificar datos de asegurados -->
+            <div>
+                <br>
+                <h2>Formulario para actualizar datos de Asegurados</h2>
+                <form action="../controller/update_asegurado.php" method="post">             
+                    <table class="tabla_40">
+                        <tr>
+                            <td colspan="2"><label>&nbsp</label></td>
+                        </tr>
+                        <tr>
+                            <td colspan="2">
+                                <label for="opciones" class="izq">Seleccionar Asegurado:</label>
+                                <select name="asegurado_seleccionado" class="der">
+                                <?php
+                                    foreach($array_asegurados as $elemento){
+                                        echo "<option value='" . $elemento['nombre'] . "'>" . $elemento['nombre'] . "</option>";
+                                    }
+                                ?>   
+                                </select>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td colspan="2"><label>&nbsp</label></td>
+                        </tr>
+                        <tr>
+                            <td class="izq"><label>Nuevo nombre:</label></td>
+                            <td class="der"><input type="text" name="nuevo_nombre" required maxlength="25"/></td>
+                        </tr>
+                        <tr>
+                            <td class="izq"><label>Nueva dirección:</label></td>
+                            <td class="der"><input type="text" name="nueva_direccion" required maxlength="25"/></td>
+                        </tr>  
+                        <tr>
+                            <td class="izq"><label>Nuevo teléfono:</label></td>
+                            <td class="der"><input type="text" name="nuevo_tel" required maxlength="25"/></td>
+                        </tr>    
+                        <tr>
+                            <td class="izq"><label>Nuevo domicilio de reparación:</label></td>
+                            <td class="der"><input type="text" name="nuevo_dom_rep" required maxlength="25"/></td>
+                        </tr>                         
+                        <tr>
+                            <td>&nbsp&nbsp&nbsp&nbsp</td>
+                        </tr>                        
+                        <tr>
+                            <td colspan="2">
+                                <input type="checkbox" name="cbox" value="confirmacion" required/>
+                                <label for="cbox">Estoy de acuerdo</label>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>&nbsp&nbsp&nbsp&nbsp</td>
+                        </tr>
+                        <tr>
+                            <td colspan="2"><input type="submit" name="enviando" value="   Actualizar   "></td>
+                        </tr>
+                        <tr>
+                            <td>&nbsp&nbsp&nbsp&nbsp</td>
+                        </tr>
+                    </table>
+                </form>
+                <br>
+            </div>  
+
             <?php
                 if ($_SESSION['privilegio']=='administrador'){
                     /*True, entoces llama al documento, para crear nueva opción: 'eliminar_asegurados' */
