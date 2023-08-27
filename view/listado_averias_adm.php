@@ -13,7 +13,7 @@
                     <select name="eliminar_seleccion">
                     <?php
                         foreach($array_averias as $elemento){
-                            echo "<option value='" . $elemento['id_averia'] . "'>" . $elemento['id'] . "</option>";
+                            echo "<option value='" . $elemento['id_averia'] . "'>" . $elemento['id_averia'] . "</option>";
                         }
                     ?>   
                     </select>

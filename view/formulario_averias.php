@@ -30,7 +30,7 @@
                             <select name="averia1" id="listado_clientes">
                                 <?php
                                     foreach($array_aseguradoras as $elemento){
-                                        echo "<option value='" . $elemento['nombre'] . "'>" . $elemento['nombre'] . "</option>";
+                                        echo "<option value='" . $elemento['id_aseguradora'] . "'>" . $elemento['id_aseguradora'] . "</option>";
                                     }
                                 ?>   
                             </select>
@@ -42,7 +42,7 @@
                             <select id="listado_asegurados" name="averia2">
                                 <?php
                                     foreach($array_asegurados as $elemento){
-                                        echo "<option value='" . $elemento['nombre'] . "'>" . $elemento['nombre'] . "</option>";
+                                        echo "<option value='" . $elemento['id_asegurado'] . "'>" . $elemento['id_asegurado'] . "</option>";
                                     }
                                 ?>   
                             </select>

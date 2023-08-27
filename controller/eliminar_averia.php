@@ -9,7 +9,7 @@
     if (isset($_POST['eliminar_seleccion']) && isset($_POST['cbox'])) {
         
         $averia_a_eliminar = $_POST['eliminar_seleccion'];
-        $nombre_columna = 'id';
+        $nombre_columna = 'id_averia';
 
         try {
             $objeto_TablasBBDD_model = new TablasBBDD_model;

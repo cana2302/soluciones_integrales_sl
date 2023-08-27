@@ -9,15 +9,15 @@
     define('DB_HOST','localhost');
     define('DB_USUARIO','root');
     define('DB_CONTRA','34933717');
-    define('DB_NOMBRE','soluciones_integrales_bbdd');  //nombre base de datos
+    define('DB_NOMBRE','bbdd__soluciones_integrales');  //nombre base de datos
     define('DB_CHARSET','utf8mb4');    //acentos y caracteres latinos
     define('DB_COLLATE','utf8mb4_unicode_ci'); // colación
 
     // Nombre de las tablas:
     // constante: (nombre utilizado en la aplicación web --- nombre de la tabla en la bbdd)
-    define('TABLA_ASEGURADORAS','aseguradoras');
-    define('TABLA_ASEGURADOS','asegurados');
-    define('TABLA_AVERIAS','averias');
-    define('TABLA_USUARIOS','usuarios');
+    define('TABLA_ASEGURADORAS','tabla_aseguradoras');
+    define('TABLA_ASEGURADOS','tabla_asegurados');
+    define('TABLA_AVERIAS','tabla_averias');
+    define('TABLA_USUARIOS','tabla_usuarios');
 
 ?>

@@ -38,9 +38,9 @@
                                 <td>";
                                     echo $elemento['id_averia'] . "</td>
                                 <td>";
-                                    echo $elemento['nombre_aseguradora'] . "</td>
+                                    echo $elemento['id_nombre_aseguradora'] . "</td>
                                 <td>";
-                                    echo $elemento['nombre_asegurado'] . "</td>
+                                    echo $elemento['id_nombre_asegurado'] . "</td>
                                 <td>";
                                     echo $elemento['fecha'] . "</td>
                                 <td>";
@@ -48,7 +48,7 @@
                                 <td>";
                                     echo $elemento['imagen'] . "</td>
                                 <td>";
-                                    echo $elemento['usuario'] . "</td>    
+                                    echo $elemento['id_nombre_usuario'] . "</td>    
                             </tr>
                         </tbody>";
                     }        

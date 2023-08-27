@@ -36,7 +36,7 @@
                         echo "<tbody>
                             <tr>
                                 <td>";
-                                    echo $elemento['nombre'] . "
+                                    echo $elemento['id_aseguradora'] . "
                                 </td>
                                 <td>";
                                     echo $elemento['domicilio'] . "</td>
@@ -70,7 +70,7 @@
                                 <select name="aseguradora_seleccionada" class="der">
                                 <?php
                                     foreach($array_aseguradoras as $elemento){
-                                        echo "<option value='" . $elemento['nombre'] . "'>" . $elemento['nombre'] . "</option>";
+                                        echo "<option value='" . $elemento['id_aseguradora'] . "'>" . $elemento['id_aseguradora'] . "</option>";
                                     }
                                 ?>   
                                 </select>

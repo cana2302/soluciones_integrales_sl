@@ -26,7 +26,7 @@
                             echo "<tbody>
                                 <tr>
                                     <td>";
-                                        echo $elemento['USUARIOS'] . "</td>
+                                        echo $elemento['id_usuario'] . "</td>
                                     <td>";
                                         echo $elemento['CONTRA'] . "</td>
                                     <td>";
@@ -91,7 +91,7 @@
                                 <?php
                                     foreach($array_usuarios as $elemento){
                                         if ($elemento['USUARIOS'] != 'admin') {
-                                            echo "<option value='" . $elemento['USUARIOS'] . "'>" . $elemento['USUARIOS'] . "</option>";
+                                            echo "<option value='" . $elemento['id_usuario'] . "'>" . $elemento['id_usuario'] . "</option>";
                                         }else {
                                                 echo "<option value='no_seleccionado'>usuario no seleccionado</option>";
                                         }

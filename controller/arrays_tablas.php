@@ -11,8 +11,8 @@
     $array_asegurados   = $objeto_TablasBBDD_model -> get_valores_tabla (TABLA_ASEGURADOS);
     $array_aseguradoras = $objeto_TablasBBDD_model -> get_valores_tabla (TABLA_ASEGURADORAS);
 
-    $array_nombres_asegurados   = $objeto_TablasBBDD_model -> get_valores_nombres (TABLA_ASEGURADOS);
-    $array_nombres_aseguradoras = $objeto_TablasBBDD_model -> get_valores_nombres (TABLA_ASEGURADORAS);
+    $array_nombres_asegurados   = $objeto_TablasBBDD_model -> get_valores_nombres (TABLA_ASEGURADOS, "id_asegurado");
+    $array_nombres_aseguradoras = $objeto_TablasBBDD_model -> get_valores_nombres (TABLA_ASEGURADORAS, "id_aseguradora");
     
     //Cerramos conexion con la bbdd
     $objeto_TablasBBDD_model->cerrar_conexion();
