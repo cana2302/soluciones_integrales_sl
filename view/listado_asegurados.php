@@ -75,11 +75,11 @@
                         </tr>
                         <tr>
                             <td class="izq"><label>Nuevo nombre:</label></td>
-                            <td class="der"><input type="text" name="nuevo_nombre" required maxlength="25"/></td>
+                            <td class="der"><input type="text" name="nuevo_nombre" required maxlength="40"/></td>
                         </tr>
                         <tr>
                             <td class="izq"><label>Nueva dirección:</label></td>
-                            <td class="der"><input type="text" name="nueva_direccion" required maxlength="25"/></td>
+                            <td class="der"><input type="text" name="nueva_direccion" required maxlength="40"/></td>
                         </tr>  
                         <tr>
                             <td class="izq"><label>Nuevo teléfono:</label></td>
@@ -87,7 +87,7 @@
                         </tr>    
                         <tr>
                             <td class="izq"><label>Nuevo domicilio de reparación:</label></td>
-                            <td class="der"><input type="text" name="nuevo_dom_rep" required maxlength="25"/></td>
+                            <td class="der"><input type="text" name="nuevo_dom_rep" required maxlength="40"/></td>
                         </tr>                         
                         <tr>
                             <td>&nbsp&nbsp&nbsp&nbsp</td>

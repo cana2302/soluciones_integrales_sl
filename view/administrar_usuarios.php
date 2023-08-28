@@ -90,7 +90,7 @@
                                 <select name="eliminar_seleccion">
                                 <?php
                                     foreach($array_usuarios as $elemento){
-                                        if ($elemento['USUARIOS'] != 'admin') {
+                                        if ($elemento['id_usuario'] != 'admin') {
                                             echo "<option value='" . $elemento['id_usuario'] . "'>" . $elemento['id_usuario'] . "</option>";
                                         }else {
                                                 echo "<option value='no_seleccionado'>usuario no seleccionado</option>";

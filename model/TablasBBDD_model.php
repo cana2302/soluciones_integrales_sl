@@ -66,12 +66,12 @@
 
         //Funcion para actualizar aseguradora
         public function actualizar_asegurado($asegurado, $nuevo_nombre, $nueva_direccion, $nuevo_tel, $nuevo_dom_rep){
-            $stmt = $this->conexion_db->prepare("UPDATE ". TABLA_ASEGURADORAS . " SET id_asegurado=:nuevo_nom, domicilio=:nuevo_domicilio, cif=:nuevo_cif, telefono=:nuevo_tel, mail=:nuevo_mail, persona=:nueva_persona WHERE id_asegurado=:nombre");
-            $stmt->bindParam(':nombre',$asegurado, PDO::PARAM_STR);
-            $stmt->bindParam(':nuevo_nom',$nuevo_nombre, PDO::PARAM_STR);
-            $stmt->bindParam(':nuevo_domicilio',$nueva_direccion, PDO::PARAM_STR);
-            $stmt->bindParam(':nuevo_tel',$nuevo_tel, PDO::PARAM_STR);
-            $stmt->bindParam(':nuevo_mail',$nuevo_dom_rep, PDO::PARAM_STR);
+            $stmt = $this->conexion_db->prepare("UPDATE ". TABLA_ASEGURADOS . " SET id_asegurado=:nuevo_nom, direccion=:nueva_direccion, telefono=:nuevo_tel, domicilio_rep=:nuevo_dom_rep WHERE id_asegurado=:nombre");
+            $stmt->bindParam(':nombre', $asegurado, PDO::PARAM_STR);
+            $stmt->bindParam(':nuevo_nom', $nuevo_nombre, PDO::PARAM_STR);
+            $stmt->bindParam(':nueva_direccion', $nueva_direccion, PDO::PARAM_STR);
+            $stmt->bindParam(':nuevo_tel', $nuevo_tel, PDO::PARAM_STR);
+            $stmt->bindParam(':nuevo_dom_rep', $nuevo_dom_rep, PDO::PARAM_STR);
             $stmt->execute();
         }
 
