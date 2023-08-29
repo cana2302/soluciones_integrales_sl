@@ -27,7 +27,7 @@
                         <th>Asegurado Particular</th>
                         <th>Fecha</th>
                         <th>Descripción</th>
-                        <th>Ruta de imágen</th>
+                        <th>Imágen</th>
                         <th>Usuario</th>
                     </tr>
                 </thead>

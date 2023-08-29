@@ -81,11 +81,11 @@
                         </tr>
                         <tr>
                             <td class="izq"><label>Nuevo nombre:</label></td>
-                            <td class="der"><input type="text" name="nuevo_nombre" required maxlength="25"/></td>
+                            <td class="der"><input type="text" name="nuevo_nombre" required maxlength="35"/></td>
                         </tr>
                         <tr>
                             <td class="izq"><label>Nuevo domicilo:</label></td>
-                            <td class="der"><input type="text" name="nuevo_domicilio" required maxlength="25"/></td>
+                            <td class="der"><input type="text" name="nuevo_domicilio" required maxlength="40"/></td>
                         </tr>
                         <tr>
                             <td class="izq"><label>Nuevo CIF:</label></td>
@@ -97,11 +97,11 @@
                         </tr>    
                         <tr>
                             <td class="izq"><label>Nuevo Mail:</label></td>
-                            <td class="der"><input type="text" name="nuevo_mail" required maxlength="25"/></td>
+                            <td class="der"><input type="text" name="nuevo_mail" required maxlength="40"/></td>
                         </tr>           
                         <tr>
                             <td class="izq"><label>Nueva persona de contacto:</label></td>
-                            <td class="der"><input type="text" name="nueva_persona" required maxlength="25"/></td>
+                            <td class="der"><input type="text" name="nueva_persona" required maxlength="35"/></td>
                         </tr>               
                         <tr>
                             <td>&nbsp&nbsp&nbsp&nbsp</td>

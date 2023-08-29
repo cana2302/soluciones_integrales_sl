@@ -14,7 +14,7 @@ De acuerdo al privilegio de la sesion se mostrarán las opciones correspondiente
 Los usuarios con privilegio de administradores puede eliminar registros de la base de datos, y administrar los usuarios (añadir, eliminar, visualizar).
 
 -------------------------------------------------------
-En la base de daots de este ejemplo:
+En la base de datos de este ejemplo:
 
 usuario:     admin
 contraseña:  admin
