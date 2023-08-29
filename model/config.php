@@ -7,9 +7,9 @@
 
     // Conexion a BASE DE DATOS:
     define('DB_HOST','localhost');
-    define('DB_USUARIO','root');
-    define('DB_CONTRA','34933717');
-    define('DB_NOMBRE','bbdd__soluciones_integrales');  //nombre base de datos
+    define('DB_USUARIO','root');        // Usuario
+    define('DB_CONTRA','');            // Contrasena
+    define('DB_NOMBRE','bbdd_soluciones_integrales_sl');  //nombre base de datos
     define('DB_CHARSET','utf8mb4');    //acentos y caracteres latinos
     define('DB_COLLATE','utf8mb4_unicode_ci'); // colación
 
